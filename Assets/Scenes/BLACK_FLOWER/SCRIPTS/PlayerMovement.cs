@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             isJumping = true;
             animator.SetTrigger("Jump");
         }
-
+        /*
         if (direction.x < 0f)
         {
             graphics.transform.localScale = new Vector3(-1, 1, 1);
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         else if (direction.x > 0f)
         {
             graphics.transform.localScale = new Vector3(1, 1, 1);
-        }
+        }*/
 
 
         animator.SetFloat("SpeedX", Mathf.Abs(direction.x));
